@@ -3,7 +3,8 @@ SSHD
 
 Secures and configures SSHD service  
 
-Purpose:
+Purpose
+-------
 
 - Disables password-based logins
 - Disables remote root login
@@ -38,5 +39,5 @@ MIT
 Author Information
 ------------------
 
-Created by [Ryan Lelek](https://www.ryanlelek.com)
+Created by [Ryan Lelek](https://www.ryanlelek.com)  
 Part of [AnsibleTutorials.com](http://www.ansibletutorials.com)
