@@ -1,1 +1,13 @@
 ---
+
+# Typically, SSHD is configured on initial provision
+# So a restart happens to apply kernel upgrades which
+# makes disabling this handler less of a huge deal
+# But it's still important and a SSHD restart may not happen
+# if all system packages are up to date. Should be fixed in Ansible v2.
+
+# TODO: Disabled handler due to disconnect bug
+# https://github.com/ansible/ansible-modules-core/issues/1298
+#- name: SSHD Restart
+#  become: yes
+#  service: name=sshd state=restarted enabled=yes
