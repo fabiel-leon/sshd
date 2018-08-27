@@ -18,3 +18,4 @@
   register: keygen_result
   # Output: ssh-keygen: generating new host keys: RSA1 ED25519
   changed_when: keygen_result.stdout != ""
+  notify: reload-ssh
